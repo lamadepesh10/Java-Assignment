@@ -20,7 +20,6 @@ public class SongList {
         Songs.remove(index);
         System.out.println("The song has been removed sucessfully");
     }
-
     public void printSongs()
     {
 
@@ -50,6 +49,5 @@ public class SongList {
                             System.out.println(s.getTitle() + "\t\t\t\t\t" + s.getArtist() + "\t\t\t\t\t" + s.getplayCount());
                         }
     }
-   
 
 }
