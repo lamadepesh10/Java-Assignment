@@ -29,13 +29,13 @@ public class SongList {
             return;
         }
         
-        System.out.println("Index\tArtist\tTitle");
+        System.out.println("Index\tArtist\tTitle\tPlay Count");
         for (int i = 0; i < Songs.size(); i++)
         {
             Song s = Songs.get(i);
             int index = Songs.indexOf(s);
 
-            System.out.println(index+"\t"+s.getArtist()+"\t"+s.getTitle());
+            System.out.println(index+"\t"+s.getArtist()+"\t"+s.getTitle()+"\t"+s.getplayCount()));
         
         }
     }
