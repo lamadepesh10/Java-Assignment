@@ -25,6 +25,32 @@ public class Process {
         
     }
 
+    public void removeSong()
+    {
+        printAllSongs();
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the index to remove: ");
+        int index= scan.nextInt();
+
+        songList.removeSong(index);
+    }
+
+    public void getData()
+    {
+        Song song = songList.get(1);
+        System.out.println(song);
+        
+    }
+
+    public void printForPlays()
+    {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Input Number of plays: ");
+
+        int plays = scan.nextInt();
+        songList.getPopular(plays);
+    }
+
 
 
 }
