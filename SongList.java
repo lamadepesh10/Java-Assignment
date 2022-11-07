@@ -39,7 +39,7 @@ public class SongList {
             Song s = Songs.get(i);
             int index = Songs.indexOf(s);
 
-            System.out.println(index+"\t"+s.getArtist()+"\t"+s.getTitle()+"\t"+s.getplayCount()));
+            System.out.println(index+"\t"+s.getArtist()+"\t"+s.getTitle()+"\t"+s.getplayCount());
         
         }
     }
