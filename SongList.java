@@ -6,20 +6,24 @@ import java.util.stream.Collectors;
 public class SongList {
     private ArrayList<Song> Songs = new ArrayList<>();
 
-
+    // Add new Song to List
     public boolean add(Song pSong) {
         return Songs.add(pSong);
     }
 
+    // Get Song by index
     public Song get(int index) {
         return Songs.get(index);
     }
 
+    // Remove song by index
     public void removeSong(int index)
     {
         Songs.remove(index);
         System.out.println("The song has been removed sucessfully");
     }
+
+    // Print all songs in list
     public void printSongs()
     {
 
@@ -40,6 +44,7 @@ public class SongList {
         }
     }
 
+    // Get Popular song greater or equal to input play count
     public void getPopular(int play)
     {
         List<Song> popularSongs = Songs.stream()

@@ -7,13 +7,17 @@ class MainSong extends Process{
     {
         while(true)
         {
+            // Display options
             System.out.println("Choose an option");
-            System.out.println("1. Add New Song\n2. Remove a Song\n3. Print all songs\n4. Print Song for number of plays");
+            System.out.println("1. Add New Song\n2. Remove a Song\n3. Print all songs\n4. Print Song for number of plays\n5. Quit");
+
+            // Creation of Scanner object
             Scanner scan = new Scanner(System.in); 
             
             int option = scan.nextInt();
             Process p = new Process();
             
+            // Switch over different input options
             switch (option)
             {
                 case 1:
@@ -28,17 +32,14 @@ class MainSong extends Process{
                 case 4:
                     p.printForPlays();
                     break;
-
+                case 5:
+                    break;
                 default:
                     System.out.println("Please select a valid option!");
                     continue;
-    
             }
         }
     }
-
-    
-
 }
 
 

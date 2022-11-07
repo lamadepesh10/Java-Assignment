@@ -1,8 +1,10 @@
 import java.util.Scanner;
 
 public class Process {
+
     private static SongList songList = new SongList();
 
+    // Input Artist, Title and Play Count
     public static void inputSong()
     {
         Scanner scan = new Scanner(System.in);
@@ -19,12 +21,14 @@ public class Process {
         
     }
 
+    // Print all the Songs in the list
     public void printAllSongs()
     {
         songList.printSongs();
         
     }
 
+    // Remove song by index
     public void removeSong()
     {
         printAllSongs();
@@ -35,13 +39,7 @@ public class Process {
         songList.removeSong(index);
     }
 
-    public void getData()
-    {
-        Song song = songList.get(1);
-        System.out.println(song);
-        
-    }
-
+    // Find Popular Songs 
     public void printForPlays()
     {
         Scanner scan = new Scanner(System.in);
@@ -50,6 +48,4 @@ public class Process {
         int plays = scan.nextInt();
         songList.getPopular(plays);
     }
-
-
 }
