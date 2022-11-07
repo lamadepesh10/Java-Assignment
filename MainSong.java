@@ -33,7 +33,7 @@ class MainSong extends Process{
                     p.printForPlays();
                     break;
                 case 5:
-                    break;
+                    System.exit(0);
                 default:
                     System.out.println("Please select a valid option!");
                     continue;
